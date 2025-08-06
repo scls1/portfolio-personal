@@ -1,0 +1,106 @@
+
+<h2 class="text-4xl text-center font-extrabold pb-10 opacity-90">Experience</h2>
+<div class="card" id="card">
+    <div class="content">
+        <article class="flex flex-col items-start justify-items-start">
+            <span class="flex pl-6 pr-6 items-center"><img class="max-w-[150px] max-h-[38px]" src="../../public/kanaicode_logo.webp" alt="Kanaicode logo"/> <h4 class="opacity-90 font-bold"> - FullStack Developer</h4></span>
+            <p class="opacity-90 pl-6 text-sm">June, 2022 - September, 2023</p>
+            <ul class="list-disc pl-18 pt-4 opacity-90">
+                <li>Develop <span class="text-yellow-500">high-quality</span>, responsive and <span class="text-yellow-500">user-friendly</span> web aplications.</li>
+                <li><span class="text-yellow-500">Optimize</span> applications performance, size and scalability.</li>
+                <li>Develop administration web apps (cms, dashboard, etc).</li>
+                <li>Help <span class="text-yellow-500">Backend team</span> adding new endpoints and features.</li>
+                <li>Review the code of new employees and <span class="text-yellow-500">help</span> them with their onbording process.</li>
+            </ul>
+        </article>
+        
+    </div>
+</div>
+
+<style>
+
+.card {
+  width: 740px;
+  height: 304px;
+  background:  #bbadff94;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+  border-radius: 30px;
+
+}
+
+.card .content {
+  background:  #09051e;
+  width: 736px;
+  height: 300px;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  display: flex;
+  border-radius: 30px;
+justify-content: center;
+  align-items: center;
+}
+
+.content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: " ";
+  display: block;
+  background: white;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  filter: blur(150px);
+  overflow: hidden;
+}
+
+.card:hover .content::before {
+  opacity: 1;
+}
+
+.card::before {
+  opacity: 0;
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 580px;
+  height: 310px;
+  background: linear-gradient(#ff2288, #387ef0);
+  transition: opacity 300ms;
+  animation: rotation_9018 8000ms infinite linear;
+  animation-play-state: paused;
+}
+
+.card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.card::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 740px;
+  height: 560px;
+  background: #17171733;
+  backdrop-filter: blur(50px);
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>

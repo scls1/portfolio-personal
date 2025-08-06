@@ -1,11 +1,28 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Card from '../components/Card.astro';
+import Intro from '../components/Intro.astro';
+import Bento from '../components/Bento.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+    <main class="flex items-center justify-center flex-col font-mono">
+        <section class="text-white w-[740px] m-auto flex items-center pt-[25vh] ">
+            <Intro />
+        </section>
+
+        <section class="pt-[15vh]">
+            <svg class="animate-bounce w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
+            </svg>
+        </section>
+
+        <section class="pt-[15vh] text-white">
+            <Card />
+        </section>
+
+        <section class="pt-[15vh]">
+            <Bento />
+        </section>
+    </main>
 </Layout>

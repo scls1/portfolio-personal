@@ -1,14 +1,27 @@
+---
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/" href="/avatar.webp" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Simão Santos - Software Engineer</title>
 	</head>
 	<body>
-		<slot />
+		<div class="relative h-full w-full bg-slate-950 overflow-x-hidden">
+			<div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+			<div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+			
+			<div class="absolute bottom-0 right-[-0%] top-[150%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div>
+			<Header />
+			<slot />	
+		</div>
 	</body>
 </html>
 
@@ -18,5 +31,8 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		display: flex;
+		flex-direction: column;
+
 	}
 </style>
