@@ -4,18 +4,18 @@ import Badge from '../components/Badge.astro';
 
 <h2 class="text-4xl text-center font-extrabold pb-10 opacity-90">Projects</h2>
 
-<div class="grid grid-cols-2 grid-rows-2 gap-4 w-[740px] h-[700px]">
-    <div class="card" id="card1">
+<div class="md:grid md:grid-cols-2 md:grid-rows-2 md:gap-4 md:w-[740px] md:h-[700px]">
+    <div class="card max-[768px]:m-6" id="card1">
         <div class="content">
             <h3>Breakpoint TennisTracker</h3>
         </div>
     </div>
-    <div class="card col-start-1 row-start-2" id="card2">
+    <div class="card col-start-1 row-start-2 max-[768px]:m-6" id="card2">
         <div class="content">
             <h3>Winetracker</h3>
         </div>
     </div>
-    <div class="card row-span-2 col-start-2 row-start-1" id="card3">
+    <div class="card row-span-2 col-start-2 row-start-1 max-[768px]:m-6" id="card3">
         <div class="content flex flex-col">
             <header class="flex flex-row items-center justify-start">
                 <img class="w-20 h-20" src="/interamap_logo.webp" alt="Interamap - Learn geography in an interactive and fun way. "/>
@@ -55,7 +55,7 @@ import Badge from '../components/Badge.astro';
                 <p class="px-6 py-2 "><span class="text-yellow-500">Interamap</span> is an interactive web application designed for teaching in elementary and middle schools.</p>
             </section>
             <footer class="flex w-[100%] px-5 justify-center">
-                <button type="button" onclick="location.href='www.youtube.com/watch?v=nTPUeu8XRvI';" class="w-[100%] justify-center flex flex-row items-center gap-1 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                <button type="button" onclick="location.href='https://www.youtube.com/watch?v=nTPUeu8XRvI&ab';" class="w-[100%] justify-center flex flex-row items-center gap-1 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
                 </svg>

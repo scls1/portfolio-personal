@@ -8,6 +8,7 @@
 
 <style>
 
+
 .card {
   width: 740px;
   height: 304px;
@@ -89,6 +90,27 @@ justify-content: center;
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    flex-direction: column; /* Opcional, si el contenido necesita apilarse */
+  }
+
+  .card .content {
+    max-width: 446px;
+    width: 100%;
+    height: auto;
+    flex-direction: column; /* Opcional, para el contenido interno */
+
+  }
+  .content{
+    margin: 2.5px;
   }
 }
 

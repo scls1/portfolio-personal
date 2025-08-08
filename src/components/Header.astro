@@ -1,9 +1,43 @@
-<header class="flex justify-between m-auto items-center w-[1120px] pb-3 text-white ">
+---
+
+---
+
+<header class="flex justify-between m-auto items-center max-w-[1120px] pb-3 pr-6 text-white ">
     <div class="flex items-center">
-        <img class="flex w-[200px] h-[200px] opacity-90" src="/personal_logo_white.webp" alt="avatar of the portfolio of Simão Santos"/>
+        <img class="flex w-[200px] h-[100px] object-cover opacity-90" src="/personal_logo_white.webp" alt="avatar of the portfolio of Simão Santos"/>
     </div>
 
-    <nav class="opacity-90 flex gap-6 text-lg ">
+
+    <nav class="md:hidden p-4">
+  <div class="max-w-screen-xl mx-auto relative">
+    
+    <!-- Checkbox oculto que controla el estado -->
+    <input id="menu-toggle" type="checkbox" class="peer hidden" />
+
+    <!-- Botón hamburguesa -->
+    <label for="menu-toggle" class="flex items-center justify-end w-10 h-10 cursor-pointer z-20 relative">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+
+    <!-- Menú desplegable: posición absoluta para que no mueva nada -->
+    <div class="absolute top-full right-[0px] w-[200px] peer-checked:flex hidden flex-col mt-2 bg-gray-800 rounded-lg shadow-lg z-10">
+      <a href="/" class="px-4 py-2 hover:text-yellow-500">Home</a>
+      <a href="#Experience" class="px-4 py-2 hover:text-yellow-500">Experience</a>
+      <a href="#Projects" class="px-4 py-2 hover:text-yellow-500">Projects</a>
+      <a href="#Stack" class="px-4 py-2 hover:text-yellow-500">Stack</a>
+      <a href="#Contact" class="px-4 py-2 hover:text-yellow-500">Contact me</a>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    <nav class="hidden opacity-90 md:flex gap-6 text-lg ">
         <a href="/" class="hover:text-yellow-500">Home</a>
         <a href="#Experience" class="hover:text-yellow-500">Experience</a>
         <a href="#Projects" class="hover:text-yellow-500">Projects</a>
