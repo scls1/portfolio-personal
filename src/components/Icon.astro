@@ -1,5 +1,11 @@
- <button class="rounded-2xl bg-transparent  p-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700  active:shadow-none " type="button">
-    <slot />
-  </button>
+---
+const { tooltip, color } = Astro.props;
+---
 
-   <!-- bg-[radial-gradient(circle_farthest-side,#44a8b3,rgba(255,255,255,0))] -->
+<button style={`border-color: ${color}; box-shadow: 0 0 10px ${color}50;`}  class="relative group rounded-2xl bg-transparent p-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none" type="button">
+  <slot />
+  <!-- Tooltip -->
+  <span style={`border-color: ${color}; box-shadow: 0 0 10px ${color}50;`}  class="absolute -top-8 left-1/2 -translate-x-1/2 rounded-md border bg-gray-800 text-white text-xs px-3 py-1.5 opacity-0 group-focus:opacity-100 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+    {tooltip}
+  </span>
+</button>
